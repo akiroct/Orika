@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090a0b">
+  <meta name="description" content="Orika — um espaço entre o Japão antigo e o futuro que ainda não chegou.">
+  <title>ORIKA — Entre mundos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <link rel="icon" href="{{ url_for('static', filename='images/favicon.png') }}" type="image/png">
+  <link rel="apple-touch-icon" href="{{ url_for('static', filename='images/favicon.png') }}">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- Barra corrida no topo: frete, garantia, etc. Reforça confiança logo de cara -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>FRETE GRÁTIS ACIMA DE R$ 300 ✦ ENVIO EM ATÉ 24H ✦ 7 DIAS PARA TROCA ✦ PRODUÇÃO EM LOTES LIMITADOS ✦ FRETE GRÁTIS ACIMA DE R$ 300 ✦ ENVIO EM ATÉ 24H ✦ 7 DIAS PARA TROCA ✦ PRODUÇÃO EM LOTES LIMITADOS ✦</span>
+    </div>
+  </div>
+
+  <header class="topbar">
+    <a class="wordmark" href="#inicio" aria-label="Orika, início">
+      <img class="wordmark-icon" src="{{ url_for('static', filename='images/favicon.png') }}" alt="">ORIKA<span>®</span>
+    </a>
+    <nav aria-label="Navegação principal">
+      <a href="#manifesto">Manifesto</a>
+      <a href="#loja">Loja</a>
+      <a href="#depoimentos">Depoimentos</a>
+      <a href="#duvidas">Dúvidas</a>
+    </nav>
+    <div class="topbar-actions">
+      <a class="menu-note" href="#loja"><span class="status-dot"></span> COMPRAR <span>↗</span></a>
+      <button class="cart-button" id="cart-toggle" aria-label="Abrir sacola de compras">
+        <span class="cart-icon">🛍</span>
+        <span class="cart-count" id="cart-count">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-meta">
+        <span>東 京 — 未来</span>
+        <span class="countdown-chip">OFERTA TERMINA EM <strong id="countdown">--:--:--</strong></span>
+      </div>
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="cross">✦</span> CULTURA EM OUTRA FREQUÊNCIA</p>
+        <h1>Entre o<br><em>ritual</em> e o<br>ruído<span class="period">.</span></h1>
+        <p class="intro">Uma nova linguagem nasce quando<br>mundos diferentes se encontram.</p>
+        <div class="hero-cta">
+          <a href="#loja" class="btn-primary">VER A COLEÇÃO <span>↗</span></a>
+          <div class="hero-social-proof">
+            <div class="avatar-stack" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+            <span><strong>2.400+</strong> pessoas já vestem Orika</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-footer"><span>DESLIZE PARA ENTRAR</span><span class="scroll-line"></span><span>01 / 05</span></div>
+      <span class="vertical-label">ORIKA — 新しい美学</span>
+    </section>
+
+    <section class="manifesto" id="manifesto">
+      <div class="section-index">01 <span>—</span> MANIFESTO</div>
+      <div class="manifesto-content">
+        <p class="eyebrow">古い魂、新しい形</p>
+        <h2>O antigo não<br>desaparece. <span>Ele<br>se transforma.</span></h2>
+        <div class="manifesto-bottom">
+          <p>Orika é um estudo de contrastes: a precisão do gesto, a energia da rua e a beleza imperfeita do que está em movimento.</p>
+          <a class="circle-link" href="#loja" aria-label="Conheça a loja Orika">↘</a>
+        </div>
+      </div>
+      <div class="manifesto-mark" aria-hidden="true">折</div>
+    </section>
+
+    <!-- Selos de confiança: reforça segurança antes da pessoa ver preço -->
+    <section class="trust-strip" aria-label="Garantias da loja">
+      <div class="trust-item"><span class="trust-icon">⟡</span><div><strong>Pagamento seguro</strong><small>Ambiente 100% criptografado</small></div></div>
+      <div class="trust-item"><span class="trust-icon">↻</span><div><strong>Troca grátis</strong><small>Até 7 dias após o recebimento</small></div></div>
+      <div class="trust-item"><span class="trust-icon">⚡</span><div><strong>Envio expresso</strong><small>Sai do estoque em até 24h</small></div></div>
+      <div class="trust-item"><span class="trust-icon">◈</span><div><strong>Lotes limitados</strong><small>Cada peça é numerada</small></div></div>
+    </section>
+
+    <section class="universe" id="universo">
+      <div class="section-index">02 <span>—</span> UNIVERSO</div>
+      <div class="universe-head"><p class="eyebrow">静けさの中に、反逆を</p><h2>Feito de<br><em>opostos.</em></h2></div>
+      <div class="cards">
+        <article class="card card-ink"><span class="card-number">I — 01</span><div class="card-mark">円</div><h3>Silêncio<br>com intenção.</h3><p>Menos excesso. Mais presença.</p><span class="card-arrow">↗</span></article>
+        <article class="card card-red"><span class="card-number">II — 02</span><div class="card-mark thorn">✦</div><h3>Instinto<br>em estado bruto.</h3><p>Uma energia que não pede licença.</p><span class="card-arrow">↗</span></article>
+        <article class="card card-gray"><span class="card-number">III — 03</span><div class="card-mark">影</div><h3>Forma que<br>deixa marca.</h3><p>Tradição redesenhada para agora.</p><span class="card-arrow">↗</span></article>
+      </div>
+    </section>
+
+    <!-- LOJA -->
+    <section class="store" id="loja">
+      <div class="section-index">03 <span>—</span> LOJA</div>
+      <div class="store-head">
+        <p class="eyebrow">数量限定 — QUANTIDADE LIMITADA</p>
+        <h2>Escolha sua<br><em>peça.</em></h2>
+        <p class="store-live"><span class="pulse-dot"></span> <strong id="viewers-count">37</strong> pessoas vendo a loja agora</p>
+      </div>
+
+      <div class="product-grid">
+        {% for p in produtos %}
+        <article class="product-card" data-reveal
+          data-id="{{ p.id }}"
+          data-name="{{ p.name }}"
+          data-price="{{ p.price }}"
+          data-stock="{{ p.stock }}">
+          <div class="product-media" style="background:linear-gradient(150deg,{{ p.color_from }},{{ p.color_to }});{% if p.light_text %}color:#131414{% else %}color:#eeece6{% endif %}">
+            {% if p.badge %}<span class="product-badge">{{ p.badge }}</span>{% endif %}
+            {% if p.discount %}<span class="product-discount">-{{ p.discount }}%</span>{% endif %}
+            <span class="product-symbol">{{ p.symbol }}</span>
+          </div>
+          <div class="product-body">
+            <span class="product-category">{{ p.category }}</span>
+            <h3>{{ p.name }}</h3>
+            <div class="product-rating" aria-label="Avaliação {{ p.rating }} de 5">
+              <span class="stars" style="--rating:{{ p.rating }}"></span>
+              <span>{{ p.rating }} ({{ p.reviews_count }})</span>
+            </div>
+            <p class="product-desc">{{ p.description }}</p>
+            <div class="product-price">
+              {% if p.original_price %}<span class="price-old">R$ {{ "%.2f"|format(p.original_price)|replace(".", ",") }}</span>{% endif %}
+              <span class="price-new">R$ {{ "%.2f"|format(p.price)|replace(".", ",") }}</span>
+            </div>
+
+            {% if p.stock <= 6 %}
+            <div class="stock-bar" aria-hidden="true">
+              <div class="stock-fill" style="width: {{ (p.stock / 6 * 100) if p.stock < 6 else 100 }}%"></div>
+            </div>
+            <p class="stock-note">🔥 Restam apenas {{ p.stock }} unidades</p>
+            {% endif %}
+
+            <button class="btn-add-cart" data-add-to-cart>Adicionar à sacola</button>
+          </div>
+        </article>
+        {% endfor %}
+      </div>
+    </section>
+
+    <!-- DEPOIMENTOS -->
+    <section class="testimonials" id="depoimentos">
+      <div class="section-index">04 <span>—</span> DEPOIMENTOS</div>
+      <div class="store-head">
+        <p class="eyebrow">声を聞く — OUÇA AS VOZES</p>
+        <h2>Quem já<br><em>vestiu, voltou.</em></h2>
+      </div>
+      <div class="testimonial-track">
+        <article class="testimonial-card">
+          <span class="stars" style="--rating:5"></span>
+          <p>"A jaqueta Ronin é outro nível de acabamento. Chegou rápido, embalagem impecável e o caimento ficou perfeito."</p>
+          <span class="testimonial-author">— Marcos A., São Paulo</span>
+        </article>
+        <article class="testimonial-card">
+          <span class="stars" style="--rating:5"></span>
+          <p>"Comprei o moletom Tokyo Nights sem esperar muito e me surpreendi. Tecido grosso, estampa não desbota."</p>
+          <span class="testimonial-author">— Beatriz L., Curitiba</span>
+        </article>
+        <article class="testimonial-card">
+          <span class="stars" style="--rating:4.5"></span>
+          <p>"Atendimento rápido no WhatsApp pra tirar dúvida de tamanho. A camiseta oversized ficou do jeito que eu queria."</p>
+          <span class="testimonial-author">— Diego R., Recife</span>
+        </article>
+        <article class="testimonial-card">
+          <span class="stars" style="--rating:5"></span>
+          <p>"Já é a terceira peça que compro. A Orika criou um estilo que eu não encontro em nenhuma outra marca nacional."</p>
+          <span class="testimonial-author">— Camila S., Belo Horizonte</span>
+        </article>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="duvidas">
+      <div class="section-index">05 <span>—</span> DÚVIDAS</div>
+      <div class="store-head"><p class="eyebrow">よくある質問</p><h2>Perguntas<br><em>frequentes.</em></h2></div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-question">Qual o prazo de entrega? <span>+</span></button>
+          <div class="faq-answer"><p>Enviamos em até 24h após a confirmação do pagamento. O prazo de entrega varia de 3 a 12 dias úteis, dependendo da sua região.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Como funciona a troca? <span>+</span></button>
+          <div class="faq-answer"><p>Você tem até 7 dias corridos após o recebimento para solicitar troca ou devolução, sem custo, direto pelo WhatsApp.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">As peças voltam ao estoque? <span>+</span></button>
+          <div class="faq-answer"><p>Trabalhamos com lotes limitados e numerados. Quando esgota, aquele lote específico não volta — pode sair uma nova versão no futuro.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Quais formas de pagamento? <span>+</span></button>
+          <div class="faq-answer"><p>Pix, cartão de crédito em até 6x e boleto. Todo o processo é finalizado com nosso time pelo WhatsApp para garantir tamanho e endereço certos.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="contato">
+      <div class="footer-top">
+        <p class="eyebrow">まだ見ぬものへ</p>
+        <h2>O próximo<br>capítulo é <em>seu.</em></h2>
+        <a class="contact-link" href="#loja">VER COLEÇÃO <span>↗</span></a>
+      </div>
+      <div class="footer-bottom">
+        <a class="wordmark" href="#inicio">ORIKA<span>®</span></a>
+        <span>東京 — BRASIL</span>
+        <span>© ORIKA 2024</span>
+        <a href="#inicio">VOLTAR AO TOPO ↑</a>
+      </div>
+    </footer>
+  </main>
+
+  <!-- SACOLA (carrinho) -->
+  <div class="cart-overlay" id="cart-overlay"></div>
+  <aside class="cart-drawer" id="cart-drawer" aria-label="Sacola de compras">
+    <div class="cart-drawer-head">
+      <h3>Sua sacola</h3>
+      <button id="cart-close" aria-label="Fechar sacola">✕</button>
+    </div>
+    <div class="cart-items" id="cart-items">
+      <p class="cart-empty" id="cart-empty">Sua sacola está vazia. Que tal dar uma olhada na loja?</p>
+    </div>
+    <div class="cart-footer">
+      <div class="cart-subtotal"><span>Subtotal</span><strong id="cart-subtotal">R$ 0,00</strong></div>
+      <a href="#" target="_blank" class="btn-primary btn-checkout" id="cart-checkout">FINALIZAR NO WHATSAPP <span>↗</span></a>
+    </div>
+  </aside>
+
+  <!-- Botão flutuante do WhatsApp -->
+  <a class="whatsapp-float" href="https://wa.me/5511999999999?text=Oi!%20Vim%20do%20site%20da%20Orika%20e%20queria%20tirar%20uma%20d%C3%BAvida." target="_blank" aria-label="Falar no WhatsApp">
+    <span>💬</span>
+  </a>
+
+  <!-- Barra fixa mobile -->
+  <div class="mobile-sticky-bar" id="mobile-sticky-bar">
+    <div><span id="mobile-cart-count">0</span> item(ns) na sacola</div>
+    <button id="mobile-cart-open">Ver sacola ↗</button>
+  </div>
+
+  <!-- Container de notificações (prova social) -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- Popup de desconto -->
+  <div class="promo-overlay" id="promo-overlay">
+    <div class="promo-modal">
+      <button class="promo-close" id="promo-close" aria-label="Fechar">✕</button>
+      <span class="eyebrow">初回限定 — SÓ PARA NOVOS CLIENTES</span>
+      <h3>Ganhe 10% OFF<br>na primeira compra</h3>
+      <p>Deixe seu e-mail e enviamos o cupom na hora.</p>
+      <form id="promo-form">
+        <input type="email" placeholder="seu@email.com" required>
+        <button type="submit">QUERO MEU CUPOM</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
